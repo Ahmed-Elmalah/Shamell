@@ -1,2 +1,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+@theme {
+  --color-brand-cyan: #18C8FF;
+  --color-brand-purple: #933FFE;
+
+  --background-image-main-gr: linear-gradient(135deg, #18C8FF 0%, #933FFE 100%);
+}
