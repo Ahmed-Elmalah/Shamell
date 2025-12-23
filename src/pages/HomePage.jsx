@@ -1,13 +1,12 @@
 import NavBar from "../components/NavBar";
-import OurCourses from "../Sections/OurCourses";
+import AboutUs from "../Sections/AboutUs";
 
-export default function () {
+export default function 
+() {
   return (
-    <div className="w-full px-17.75 py-2.5 relative">
-      <NavBar />
-      <div>
-        <OurCourses />
-      </div>
+    <div className="w-full px-4 md:px-6 lg:px-17.75 py-2.5 relative">
+        <NavBar/>
+        
     </div>
-  );
+  )
 }
