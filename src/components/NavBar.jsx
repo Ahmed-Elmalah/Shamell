@@ -35,7 +35,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="h-18.75 bg-[#1C1C1C] rounded-2xl sticky top-2.5 z-50 flex items-center justify-between px-4 md:px-3 lg:px-5 xl:px-8 text-white w-full">
+    <nav className="h-18.75 dark:bg-[#1C1C1C] bg-[#FBFBFB] rounded-2xl sticky top-2.5 z-50 flex items-center justify-between px-4 md:px-3 lg:px-5 xl:px-8 text-white w-full">
       {/* 1. اللوجو - صغرنا حجمه شوية في الـ lg عشان يوفر مساحة */}
       <div className="shrink-0">
         <a href="#home">
@@ -53,7 +53,7 @@ export default function NavBar() {
           <a
             key={index}
             href={"#" + item.sectionId}
-            className="transition-all hover:bg-main-gr hover:bg-clip-text hover:text-transparent cursor-pointer md:text-[13px] lg:text-[14px] xl:text-[18px] whitespace-nowrap font-medium"
+            className="text-[#555555] dark:text-[#FFFFFF] transition-all hover:bg-main-gr hover:bg-clip-text hover:text-transparent cursor-pointer md:text-[13px] lg:text-[14px] xl:text-[18px] whitespace-nowrap font-medium"
           >
             {item.name}
           </a>
@@ -76,7 +76,7 @@ export default function NavBar() {
         <div className="hidden lg:block w-px h-6 bg-gray-700"></div>
 
         <div className="flex items-center gap-x-4 md:gap-x-4 lg:gap-x-3 xl:gap-x-4">
-          <button className="md:text-[14px] lg:text-[16px] xl:text-[18px] font-bold hover:text-blue-400 transition-colors cursor-pointer">
+          <button className="text-[#222222] dark:text-[#FFFFFF] md:text-[14px] lg:text-[16px] xl:text-[18px] font-bold hover:text-blue-400 transition-colors cursor-pointer">
             ع
           </button>
           <ThemeToggle />
