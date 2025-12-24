@@ -54,7 +54,7 @@ export default function OurCourses() {
     },
   ];
   return (
-    <div className="w-full bg-amber-600 flex flex-col gap-2 items-center">
+    <div id="courses" className="w-full  flex flex-col gap-2 items-center">
       <h3 className="text-[36px] font-semibold">Our Courses</h3>
       <p className="text-[18px]">
         Explore our top Courses curated by experts to boost your learning

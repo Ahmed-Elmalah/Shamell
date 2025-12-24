@@ -3,7 +3,7 @@ import HomePage from "./pages/HomePage";
 
 export default function App() {
   return (
-    <div className="w-full h-dvh overflow-auto">
+    <div className="w-full h-auto overflow-hidden">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage/>}/>
