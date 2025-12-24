@@ -1,22 +1,24 @@
 import React from 'react'
 import AboutUsCards from '../components/AboutUsCards'
-
+import img1 from "../assets/AboutUsImg1.png"
+import img2 from "../assets/AboutUsImg2.png"
+import img3 from "../assets/AboutUsImg3.png"
 export default function AboutUs() {
   const AboutUsCard = [
     {
-      icon: "src/assets/checkmark-badge-02.png",
+      icon: img1,
       title: "Trusted Mentors",
       content:
         "Our courses are taught by experienced and qualified instructors who understand how to explain complex topics in a simple and effective way for high school students."
     },
     {
-      icon: "src/assets/attachment-01.png",
+      icon: img2,
       title: "Complete Courses",
       content:
         "Each course is carefully designed to cover the full curriculum, from basic concepts to advanced lessons, ensuring a complete learning journey."
     },
     {
-      icon: "src/assets/share-07.png",
+      icon: img3,
       title: "Easy Access",
       content:
         "Access your courses anytime and anywhere through a user-friendly platform that works smoothly across all devices."
