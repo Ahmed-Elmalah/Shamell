@@ -1,6 +1,6 @@
 import NavBar from "../components/NavBar";
 import AboutUs from "../Sections/AboutUs";
-import HeroSection from "../sections/HeroSection";
+import HeroSection from "../Sections/HeroSection";
 import OurCourses from "../Sections/OurCourses";
 
 export default function 
