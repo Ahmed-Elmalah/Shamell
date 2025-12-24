@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/Logo.png";
-import ThemeToggle from "./ThemeToggle/ThemeToggle";
+import ThemeToggle from "./themeToggle/ThemeToggle";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
 export default function NavBar() {
