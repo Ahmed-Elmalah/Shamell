@@ -35,8 +35,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="h-18.75 dark:bg-[#1C1C1C] bg-[#FBFBFB] rounded-2xl sticky top-2.5 z-50 flex items-center justify-between px-4 md:px-3 lg:px-5 xl:px-8 text-white w-full">
-      {/* 1. اللوجو - صغرنا حجمه شوية في الـ lg عشان يوفر مساحة */}
+    <nav className="h-18.75 dark:bg-[#1C1C1C] bg-[#FBFBFB] rounded-2xl fixed top-2.5 left-4 right-4 md:left-6 md:right-6 lg:left-17.75 lg:right-17.75 z-50 flex items-center justify-between px-4 md:px-3 lg:px-5 xl:px-8 text-white">
       <div className="shrink-0">
         <a href="#home">
           <img
@@ -50,13 +49,13 @@ export default function NavBar() {
       {/* 2. اللينكات - قللنا الـ gap في الـ lg وخليناه يزيد في الـ xl */}
       <ul className="hidden md:flex items-center md:gap-x-3 lg:gap-x-4 xl:gap-x-6">
         {navLinks.map((item, index) => (
-          <a
+          <button
+            onClick={() => scrollToSection(item.sectionId)}
             key={index}
-            href={"#" + item.sectionId}
             className="text-[#555555] dark:text-[#FFFFFF] transition-all hover:bg-main-gr hover:bg-clip-text hover:text-transparent cursor-pointer md:text-[13px] lg:text-[14px] xl:text-[18px] whitespace-nowrap font-medium"
           >
             {item.name}
-          </a>
+          </button>
         ))}
       </ul>
 
@@ -95,13 +94,13 @@ export default function NavBar() {
       {isOpen && (
         <div className="absolute top-21.25 left-0 w-full bg-[#1C1C1C] rounded-2xl p-6 flex flex-col gap-4 md:hidden border border-gray-800 shadow-2xl z-50">
           {navLinks.map((item, index) => (
-            <a
+            <button
+              onClick={() => scrollToSection(item.sectionId)}
               key={index}
-              href={"#" + item.sectionId}
               className="transition-all text-center py-2 border-b border-gray-800 text-gray-300"
             >
               {item.name}
-            </a>
+            </button>
           ))}
           <button className="transition-all bg-main-gr py-3 rounded-md font-bold mt-2">
             Login
