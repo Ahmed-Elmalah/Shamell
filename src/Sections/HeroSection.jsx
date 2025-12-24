@@ -15,14 +15,14 @@ export default function HeroSection() {
             </span>
           </div>
           <div className="flex  flex-col items-center lg:items-start">
-            <h1 className=" md:text-[64px] text-[38px] font-bold text-white leading-tight mb-6">
+            <h1 className=" md:text-[64px] text-[38px] font-bold text-[#222222] dark:text-white leading-tight mb-6">
             Empower Your Future 
             Through{" "}
             <span className="md:text-[64px] text-[38px] bg-main-gr bg-clip-text text-transparent">
               Education
             </span>
           </h1>
-          <p className="text-[#DDDDDD] md:text-[18px] text-[13px] mb-8 max-w-lg">
+          <p className="dark:text-[#DDDDDD] text-[#555555] md:text-[18px] text-[13px] mb-8 max-w-lg">
             An online learning platform designed for high school students,
             offering structured courses taught by experienced instructors.
           </p>
