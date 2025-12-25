@@ -2,12 +2,15 @@ import React from 'react'
 
 export default function AboutUsCards({ el }) {
   return (
- 
 
-    <div className="dark:bg-[#222222] bg-gray-200 h-[300px] flex flex-col justify-between gap-3 p-4 rounded-2xl border border-transparent
-             transition-all duration-300
-            
-            hover:shadow-[0_0_25px_var(--color-brand-purple)] ">
+
+    <div className="
+  dark:bg-[#222222] 
+  bg-gray-200 
+   h-auto  min-h-[240px]  sm:min-h-[260px]  md:min-h-[300px]
+  flex flex-col justify-between gap-3 
+  p-4 sm:p-5  md:p-6  lg:p-8 
+  rounded-2xl border border-transparent transition-all duration-300  hover:shadow-[0_0_25px_var(--color-brand-purple)]">
       <figure className="flex justify-center">
         <img
           src={el.icon}
@@ -21,7 +24,7 @@ export default function AboutUsCards({ el }) {
           {el.title}
         </h2>
 
-        <p className="text-[14px] dark:text-white text-black leading-[22px]">
+        <p className="text-[14px] dark:text-white text-black leading-[22px] ">
           {el.content}
         </p>
       </div>
