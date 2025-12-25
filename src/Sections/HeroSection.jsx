@@ -1,12 +1,14 @@
 import heroImgLight from "../assets/heroImgLight.png";
 import heroImgDark from '../assets/heroImgDark.png'
+import CirclesDark from '../assets/HeroCirclesDark.png'
+import CirclesLight from '../assets/HeroCirclesLight.png'
 import { useTheme } from "../store";
 export default function HeroSection() {
   const {isDarkMode} = useTheme();
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] flex items-center overflow-visible pt-15 w-full"
+      className="relative min-h-[80vh] flex items-center overflow-visible pt-15 w-full "
     >
       <div className=" lg:w-[50vw]  flex flex-col lg:flex-row items-center justify-between">
         {/* 2. النص (على الشمال) */}
@@ -42,6 +44,10 @@ export default function HeroSection() {
 
       <div className="lg:w-201.5 lg:h-210.5  absolute -top-30 -right-22 rotate-5 ">
         <img src={isDarkMode ? heroImgDark : heroImgLight} className="w-full h-full object-cover " alt="" />
+      </div>
+
+      <div className="lg:w-360 h-207.5 md:w-250 lg:top-10 top-50 w-150 absolute">
+        <img src={isDarkMode? CirclesDark : CirclesLight} alt="" className="w-full h-full object-cover "/>
       </div>
     </section>
   );

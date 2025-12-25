@@ -26,7 +26,7 @@ export default function AboutUs() {
   ]
 
   return (
-    <section id='about' className="w-full dark:bg-black bg-white dark:text-white text-black py-24 px-6 flex flex-col items-center gap-10">
+    <section id='about' className="w-full dark:bg-black dark:text-white text-black py-24 px-6 flex flex-col items-center gap-10">
 
       {/* Title */}
       <h1 className="text-center text-4xl md:text-5xl font-semibold">
