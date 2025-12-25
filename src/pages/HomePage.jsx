@@ -4,6 +4,7 @@ import AboutUs from "../Sections/AboutUs";
 import HeroSection from "../Sections/HeroSection";
 import MeetOurMentors from "../Sections/MeetOurMentors";
 import OurCourses from "../Sections/OurCourses";
+import SubjectsSection from "../Sections/SubjectsSection";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <AboutUs />
       <OurCourses />
       <MeetOurMentors/>
+      <SubjectsSection/>
     </div>
   );
 }
