@@ -21,7 +21,7 @@ export default function MeetOurMentorsCard({ el }) {
             />
 
             {/* White Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-800/100 via-zinc-800/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t dark:from-gray-800/100 dark:via-zinc-800/20 to-transparent from-white/90 via-zinc-300/10 to-transparent " />
 
             {/* Content */}
             <div className="absolute bottom-0 left-0 right-0 p-5">
