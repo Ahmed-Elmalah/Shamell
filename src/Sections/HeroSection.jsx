@@ -1,6 +1,8 @@
 import heroImgLight from "../assets/heroImgLight.png";
 import heroImgDark from '../assets/heroImgDark.png'
+import { useTheme } from "../store";
 export default function HeroSection() {
+  const {isDarkMode} = useTheme();
   return (
     <section
       id="home"
@@ -38,8 +40,8 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="lg:w-201.5 lg:h-210.5  absolute -top-30 -right-22 rotate-7 ">
-        <img src={heroImgDark} className="w-full h-full object-cover " alt="" />
+      <div className="lg:w-201.5 lg:h-210.5  absolute -top-30 -right-22 rotate-5 ">
+        <img src={isDarkMode ? heroImgDark : heroImgLight} className="w-full h-full object-cover " alt="" />
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ export const useTheme = create((set)=>({
 
         }
 
-        return {isDarkMode}
+        return {isDarkMode :nextMode}
     })),
 
     initTheme : ()=>{
@@ -21,4 +21,4 @@ export const useTheme = create((set)=>({
         set({isDarkMode : isDark});
     }
     
-}))
+}));
