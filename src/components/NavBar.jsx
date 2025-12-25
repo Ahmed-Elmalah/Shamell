@@ -8,9 +8,9 @@ export default function NavBar() {
   const navLinks = [
     { name: "Home", sectionId: "home" },
     { name: "About", sectionId: "about" },
-    { name: "Our Courses", sectionId: "courses" },
+    { name: "Shamell Courses", sectionId: "courses" },
+    { name: "Shamell Subjects", sectionId: "subjects" },
     { name: "Code Locations", sectionId: "locations" },
-    { name: "Questions", sectionId: "questions" },
   ];
 
   const scrollToSection = (sectionId) => {
@@ -47,7 +47,7 @@ export default function NavBar() {
       </div>
 
       {/* 2. اللينكات - قللنا الـ gap في الـ lg وخليناه يزيد في الـ xl */}
-      <ul className="hidden md:flex items-center md:gap-x-3 lg:gap-x-6 xl:gap-x-[47px]">
+      <ul className="hidden md:flex items-center md:gap-x-2 lg:gap-x-6 xl:gap-x-11.75">
         {navLinks.map((item, index) => (
           <button
             onClick={() => scrollToSection(item.sectionId)}
