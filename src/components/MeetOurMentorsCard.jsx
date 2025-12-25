@@ -2,29 +2,41 @@ import React from 'react'
 
 export default function MeetOurMentorsCard({ el }) {
     return (
-        <div className="relative w-[330px] h-[450px] rounded-2xl overflow-hidden bg-zinc-900 shadow-lg">
+        <div className="  relative
+    w-full
+    max-w-[320px]
+    h-[430px]
+    rounded-2xl
+    overflow-hidden
+    bg-zinc-900
+    shadow-lg
+     transition-all duration-300
+     hover:shadow-[0_0_25px_var(--color-brand-purple)] ">
 
             {/* Image */}
             <img
                 src={el.MentorImg}
-                alt={name}
+                alt={el.title}
                 className="w-full h-full object-cover"
             />
 
-            {/* Dark Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+            {/* White Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-gray-800/100 via-zinc-800/20 to-transparent" />
 
             {/* Content */}
             <div className="absolute bottom-0 left-0 right-0 p-5">
-                <h3 className="text-white text-xl font-semibold">
+                <h3 className="dark:text-white text-black text-2xl font-semibold">
                     {el.title}
                 </h3>
 
                 <div className="flex items-center gap-2 mt-2">
-                    
-                        <img src={el.icon} alt="icon" className="w-10 h-10" />
-                    
-                    <span className="text-purple-400 text-sm font-medium">
+                    <img
+                        src={el.icon}
+                        alt="icon"
+                        className="w-8 h-8"
+                    />
+
+                    <span className="bg-main-gr bg-clip-text text-transparent text-sm font-medium">
                         {el.content}
                     </span>
                 </div>
