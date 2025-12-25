@@ -6,7 +6,7 @@ export default function AboutUsCards({ el }) {
 
     <div className="dark:bg-[#222222] bg-gray-200 h-[300px] flex flex-col justify-between gap-3 p-4 rounded-2xl border border-transparent
              transition-all duration-300
-             hover:border-[var(--color-brand-cyan)]
+            
             hover:shadow-[0_0_25px_var(--color-brand-purple)] ">
       <figure className="flex justify-center">
         <img
