@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/Logo.png";
 import ThemeToggle from "./themeToggle/ThemeToggle";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
@@ -36,18 +36,18 @@ export default function NavBar() {
 
   return (
     <nav className="h-18.75 dark:bg-[#1C1C1C] bg-[#FBFBFB] rounded-2xl fixed top-2.5 left-4 right-4 md:left-6 md:right-6 lg:left-17.75 lg:right-17.75 z-50 flex items-center justify-between px-4 md:px-3 lg:px-5 xl:px-8 text-white">
-      <div className="shrink-0">
-        <a href="#home">
+      <div className="shrink-0 ">
+        <button className="cursor-pointer" onClick={() => scrollToSection('home')}>
           <img
             src={logo}
             alt="Shamel Logo"
             className="h-8.75 md:h-9.5 lg:h-10.5 xl:h-12.75 w-auto object-contain hover:scale-105 transition-all"
           />
-        </a>
+        </button>
       </div>
 
       {/* 2. اللينكات - قللنا الـ gap في الـ lg وخليناه يزيد في الـ xl */}
-      <ul className="hidden md:flex items-center md:gap-x-3 lg:gap-x-4 xl:gap-x-6">
+      <ul className="hidden md:flex items-center md:gap-x-3 lg:gap-x-6 xl:gap-x-[47px]">
         {navLinks.map((item, index) => (
           <button
             onClick={() => scrollToSection(item.sectionId)}
@@ -60,7 +60,7 @@ export default function NavBar() {
       </ul>
 
       {/* 3. الجزء اليمين */}
-      <div className="flex items-center gap-3 md:gap-x-3 lg:gap-x-4 xl:gap-x-6">
+      <div className="flex items-center gap-3 md:gap-x-3 lg:gap-x-4 xl:gap-x-12">
         {/* أزرار الدخول: أهم تعديل هنا هو الـ whitespace-nowrap عشان كلمة Sign Up ماتتكسرش */}
         <div className="hidden md:flex items-center md:gap-x-2 lg:gap-x-3 xl:gap-x-4">
           <button className="transition-all cursor-pointer hover:scale-105 md:text-[13px] lg:text-[14px] xl:text-[18px] font-semibold bg-main-gr bg-clip-text text-transparent whitespace-nowrap">
@@ -74,7 +74,7 @@ export default function NavBar() {
         {/* خط فاصل */}
         <div className="hidden lg:block w-px h-6 bg-gray-700"></div>
 
-        <div className="flex items-center gap-x-4 md:gap-x-4 lg:gap-x-3 xl:gap-x-4">
+        <div className="flex items-center gap-x-4 md:gap-x-4 lg:gap-x-3 xl:gap-x-10">
           <button className="text-[#222222] dark:text-[#FFFFFF] md:text-[14px] lg:text-[16px] xl:text-[18px] font-bold hover:text-blue-400 transition-colors cursor-pointer">
             ع
           </button>
