@@ -3,6 +3,7 @@ import img1 from "../assets/OurCorsesImg1.jpg";
 import img2 from "../assets/OurCorsesImg2.jpg";
 import img3 from "../assets/OurCorsesImg3.jpg";
 import { GrFormNextLink } from "react-icons/gr";
+import OrangeGlow from "../components/OrangeGlow";
 
 export default function OurCourses() {
   const cards = [
@@ -56,7 +57,8 @@ export default function OurCourses() {
     },
   ];
   return (
-    <div id="courses" className="w-full  flex flex-col gap-3 items-center justify-center">
+    <div id="courses" className="w-full  flex flex-col relative gap-3 items-center justify-center">
+      <OrangeGlow/>
       <h3 className="text-[36px] dark:text-white text-black font-semibold">Our Courses</h3>
       <p className="text-[16px] dark:text-white text-[#121212ce] text-center">
         Explore our top Courses curated by experts to boost your learning
