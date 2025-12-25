@@ -3,7 +3,7 @@ import { IoTimeOutline } from "react-icons/io5";
 
 export default function OurCoursesCard({ el }) {
   return (
-    <div className="bg-[#e5e7eb] dark:bg-[#222222] h-[448px] flex flex-col justify-between gap-1.5 p-4 rounded-2xl transition-all duration-300
+    <div className="bg-[#e5e7eb] z-40 dark:bg-[#222222] h-[448px] w-full md:w-auto flex flex-col justify-between gap-1.5 p-4 rounded-2xl transition-all duration-300
              hover:border-[var(--color-brand-cyan)]
             hover:shadow-[0_0_25px_var(--color-brand-purple)]">
       <svg width="0" height="0" className="absolute">
