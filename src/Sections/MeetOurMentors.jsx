@@ -3,6 +3,7 @@ import MeetOurMentorsCard from '../components/MeetOurMentorsCard'
 import MentorImg1 from "../assets/MentorImg1.png"
 import MentorImg2 from "../assets/MentorImg2.png"
 import MentorImg3 from "../assets/MentorImg3.png"
+import MentorImg4 from "../assets/MentorImg4.jpg"
 import MentorIcon from "../assets/MentorIcon.png"
 import PurpleGlow from '../components/PurpleGlow'
 import PurpleGlow2 from '../components/PurpleGlow2'
@@ -12,31 +13,31 @@ export default function MeetOurMentors() {
     const MentorsCard = [
         {
           MentorImg: MentorImg1,
-          title: "Dr. Ahmed Hassan",
+          title: "Mr. Ahmed khaled",
           icon:MentorIcon,
           content:
-            "English Language Instructor"
+            "IT Maneger"
         },
         {
           MentorImg: MentorImg2,
-          title: "Mr. Omar Khaled",
+          title: "Mr. Mohamed Abo ElAzm",
           icon:MentorIcon,
           content:
-            "Physics Instructor"
+            "The Top Mentor"
         },
         {
           MentorImg: MentorImg3,
-          title: "Ms. Hana Mahmoud",
+          title: "Mr. Ziad Mahdy",
           icon:MentorIcon,
           content:
-            "Mathematics Instructor"
+            "Web Developer"
         },
         {
-          MentorImg: MentorImg2,
+          MentorImg: MentorImg4,
           title: "Mr. Omar Khaled   ",
           icon:MentorIcon,
           content:
-            "Physics Instructor"
+            "UI UX Designer"
         },
         
       ]
