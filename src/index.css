@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-brand-cyan: #18C8FF;
