@@ -2,6 +2,7 @@ import NavBar from "../components/NavBar";
 import PurpleGlow from "../components/PurpleGlow";
 import AboutUs from "../Sections/AboutUs";
 import HeroSection from "../Sections/HeroSection";
+import MeetOurMentors from "../Sections/MeetOurMentors";
 import OurCourses from "../Sections/OurCourses";
 
 export default function HomePage() {
@@ -12,6 +13,7 @@ export default function HomePage() {
       <PurpleGlow/>
       <AboutUs />
       <OurCourses />
+      <MeetOurMentors/>
     </div>
   );
 }
