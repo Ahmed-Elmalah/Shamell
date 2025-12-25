@@ -17,7 +17,7 @@ export default function GradeCard({ gradeData, index }) {
     : gradeData.subjects.slice(0, 3);
 
   return (
-    <div className={`w-full p-6 rounded-3xl bg-[#FBFBFB] dark:bg-[#1C1C1C] border border-gray-200 dark:border-gray-800 flex flex-col items-center shadow-lg transition-all duration-500 ${staircaseClasses[index]}`}>
+    <div className={`w-full z-10 p-6 rounded-3xl bg-[#FBFBFB] dark:bg-[#1C1C1C] border border-gray-200 dark:border-gray-800 flex flex-col items-center shadow-lg transition-all duration-500 ${staircaseClasses[index]}`}>
       
       <h3 className="text-2xl font-bold text-black dark:text-white mb-6">
         Grade {gradeData.grade}
