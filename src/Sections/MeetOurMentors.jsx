@@ -34,7 +34,7 @@ export default function MeetOurMentors() {
         },
         {
           MentorImg: MentorImg4,
-          title: "Mr. Omar Khaled   ",
+          title: "Ms. Sara Ahmed   ",
           icon:MentorIcon,
           content:
             "UI UX Designer"
