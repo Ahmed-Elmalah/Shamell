@@ -18,9 +18,7 @@ export default function GradeCard({ gradeData, index }) {
 
   return (
     <div className={`w-full p-6 rounded-3xl bg-[#FBFBFB] dark:bg-[#1C1C1C] border border-gray-200 dark:border-gray-800 flex flex-col items-center shadow-lg transition-all duration-500 ${staircaseClasses[index]}`}>
-      <span className="text-brand-cyan font-bold text-sm mb-2 uppercase tracking-widest">
-        Level
-      </span>
+      
       <h3 className="text-2xl font-bold text-black dark:text-white mb-6">
         Grade {gradeData.grade}
       </h3>
