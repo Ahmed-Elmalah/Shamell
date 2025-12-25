@@ -2,7 +2,7 @@ import React from "react";
 import InstagramIcon from "../assets/InstagramIcon.png"
 import TelegramIcon from "../assets/TelegramIcon.png"
 import FacebookIcon from "../assets/FacebookIcon.png"
-import LinkedinIcon from "../assets/LinkedinIcon.png"
+import LinkedinIcon from "../assets/linkedinIcon.png"
 
 export default function Footer() {
     let icons = [InstagramIcon, FacebookIcon, LinkedinIcon, TelegramIcon]
