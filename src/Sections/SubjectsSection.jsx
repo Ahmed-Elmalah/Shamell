@@ -18,7 +18,7 @@ export default function SubjectsSection() {
   ];
 
   return (
-    <section id="subjects" className="w-full py-32 px-4 md:px-6 lg:px-17.75 bg-white dark:bg-black transition-colors overflow-visible">
+    <section id="subjects" className="w-full min-h-[65vh] py-14 px-4 md:px-6 lg:px-15 transition-colors overflow-visible mb-10">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         
         {/* Header Section */}
