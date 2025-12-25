@@ -9,7 +9,9 @@ export default function MeetOurMentorsCard({ el }) {
     rounded-2xl
     overflow-hidden
     bg-zinc-900
-    shadow-lg">
+    shadow-lg
+     transition-all duration-300
+     hover:shadow-[0_0_25px_var(--color-brand-purple)] ">
 
             {/* Image */}
             <img
