@@ -18,6 +18,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/login" element={<LoginPage/>}/>
+          <Route path="*" element={<h1>404 Page</h1>}/>
         </Routes>
       </BrowserRouter>
     </div>
