@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "../assets/Logo.png";
 import ThemeToggle from "./themeToggle/ThemeToggle";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,12 +64,12 @@ export default function NavBar() {
       <div className="flex items-center gap-3 md:gap-x-3 lg:gap-x-4 xl:gap-x-12">
         {/* أزرار الدخول: أهم تعديل هنا هو الـ whitespace-nowrap عشان كلمة Sign Up ماتتكسرش */}
         <div className="hidden md:flex items-center md:gap-x-2 lg:gap-x-3 xl:gap-x-4">
-          <button className="transition-all cursor-pointer hover:scale-105 md:text-[13px] lg:text-[14px] xl:text-[18px] font-semibold bg-main-gr bg-clip-text text-transparent whitespace-nowrap">
+          <Link to="/register" className="transition-all cursor-pointer hover:scale-105 md:text-[13px] lg:text-[14px] xl:text-[18px] font-semibold bg-main-gr bg-clip-text text-transparent whitespace-nowrap">
             Sign Up
-          </button>
-          <button className="transition-all cursor-pointer hover:scale-105 bg-main-gr md:px-3 lg:px-4 xl:px-6 md:py-1.5 lg:py-2 rounded-md md:text-[13px] lg:text-[14px] xl:text-[18px] font-bold whitespace-nowrap">
+          </Link>
+          <Link to="/login" className="transition-all cursor-pointer hover:scale-105 bg-main-gr md:px-3 lg:px-4 xl:px-6 md:py-1.5 lg:py-2 rounded-md md:text-[13px] lg:text-[14px] xl:text-[18px] font-bold whitespace-nowrap">
             Login
-          </button>
+          </Link>
         </div>
 
         {/* خط فاصل */}
