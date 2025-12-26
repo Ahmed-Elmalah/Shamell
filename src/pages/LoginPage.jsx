@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Eye, EyeOff, Phone, Lock } from "lucide-react";
@@ -7,8 +7,13 @@ import PurpleGlow2 from '../components/PurpleGlow2'
 import logo from "../assets/Logo.png";
 import { Link } from "react-router-dom";
 import RegisterPage from "./RegisterPage";
+import NavBar2 from "../components/NavBar2";
+
 
 export default function LoginPage() {
+
+
+
     const [showPassword, setShowPassword] = useState(false);
 
     const initialValues = {
@@ -33,16 +38,21 @@ export default function LoginPage() {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-black text-white relative">
+        <div className="min-h-screen flex items-center justify-center dark:bg-black bg-white dark:text-white text-black relative">
+
+            
+            <NavBar2/>
+
+
             <div className="w-full max-w-md px-6 flex flex-col items-center">
 
                 <PurpleGlow2 />
                 <OrangeGlow />
                 {/* Logo */}
-                <img src={logo} alt="Logo" className="w-40 mb-4" />
+                <img src={logo} alt="Logo" className="w-40 mb-4 mt-10 " />
 
                 <h2 className="text-2xl font-semibold text-center">Welcome Back!</h2>
-                <p className="text-gray-400 text-center mb-8">
+                <p className="dark:text-gray-400  text-black text-center mb-8">
                     We are excited to have your back. Log in now and access your account.
                 </p>
 
@@ -57,13 +67,13 @@ export default function LoginPage() {
                             {/* Phone */}
                             <div>
                                 <label className="text-sm">Phone Number</label>
-                                <div className="flex items-center gap-3 bg-[#1A1A1A] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-purple-500">
+                                <div className="flex items-center gap-3 dark:bg-[#1A1A1A] bg-[#FFFFFF] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-purple-500">
                                     <Phone size={20} className="text-gray-400" />
                                     <Field
                                         name="phone"
                                         type="text"
                                         placeholder="01234567899"
-                                        className="bg-transparent text-white placeholder-gray-400 w-full h-full outline-none text-base"
+                                        className="bg-transparent dark:text-white text-black placeholder-gray-400 w-full h-full outline-none text-base"
                                     />
                                 </div>
                                 <ErrorMessage
@@ -76,12 +86,12 @@ export default function LoginPage() {
                             {/* Password */}
                             <div>
                                 <label className="text-sm">Password</label>
-                                <div className="flex items-center gap-3 bg-[#1A1A1A] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-purple-500">
+                                <div className="flex items-center gap-3 dark:bg-[#1A1A1A] bg-[#FFFFFF] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-purple-500">
                                     <Lock size={20} className="text-gray-400" />
                                     <Field
                                         name="password"
                                         type={showPassword ? "text" : "password"}
-                                        className="bg-transparent text-white placeholder-gray-400 w-full h-full outline-none text-base"
+                                        className="bg-transparent dark:text-white text-black placeholder-gray-400 w-full h-full outline-none text-base"
                                     />
                                     <button
                                         type="button"
@@ -100,11 +110,11 @@ export default function LoginPage() {
 
                             {/* Remember & Forgot */}
                             <div className="flex justify-between items-center text-sm">
-                                <label className="flex items-center gap-2">
+                                <label className="flex items-center gap-2 ">
                                     <Field
                                         type="checkbox"
                                         name="remember"
-                                        className="accent-purple-500"
+                                        className=" accent-purple-500"
                                     />
                                     Remember Me
                                 </label>
@@ -125,13 +135,13 @@ export default function LoginPage() {
 
                             {/* Student Code */}
                             <div>
-                                <label className="text-sm">Student Code</label>
-                                <div className="flex items-center bg-[#1A1A1A] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-purple-500">
+                                <label className="text-sm dark:text-white text-black">Student Code</label>
+                                <div className="flex items-center dark:bg-[#1A1A1A] bg-[#FFFFFF] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-purple-500">
                                     <Field
                                         name="studentCode"
                                         type="text"
                                         placeholder="Enter your code"
-                                        className="bg-transparent text-white placeholder-gray-400 w-full h-full outline-none text-base"
+                                        className="bg-transparent dark:text-white text-black placeholder-gray-400 w-full h-full outline-none text-base"
                                     />
                                 </div>
                             </div>
@@ -148,7 +158,7 @@ export default function LoginPage() {
                     )}
                 </Formik>
 
-                <p className="text-center text-sm text-gray-400 mt-6">
+                <p className="text-center text-sm dark:text-gray-400 text-black mt-6">
                     Don't have an account yet?{" "}
                     <Link to="/register" className="text-cyan-400 cursor-pointer hover:underline">
                         Register
