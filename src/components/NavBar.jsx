@@ -94,12 +94,12 @@ export default function NavBar() {
 
       {/* مِنيو الموبايل */}
       {isOpen && (
-        <div className="absolute top-21.25 left-0 w-full bg-[#1C1C1C] rounded-2xl p-6 flex flex-col gap-4 md:hidden border border-gray-800 shadow-2xl z-50">
+        <div className="absolute top-21.25 left-0 w-full bg-[#FBFBFB] dark:bg-[#1C1C1C] rounded-2xl p-6 flex flex-col gap-4 md:hidden border border-gray-800 shadow-2xl z-50">
           {navLinks.map((item, index) => (
             <button
               onClick={() => scrollToSection(item.sectionId)}
               key={index}
-              className="transition-all text-center py-2 border-b border-gray-800 text-gray-300"
+              className="transition-all text-center py-2 border-b border-gray-800 text-gray-900 dark:text-gray-300"
             >
               {item.name}
             </button>
