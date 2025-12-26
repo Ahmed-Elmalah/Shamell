@@ -3,6 +3,9 @@ import HomePage from "./pages/HomePage";
 import { useTheme } from "./store";
 import { useEffect } from "react";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import NotFound404 from "./pages/NotFound404";
+import ForgetPassword from "./pages/ForgetPassword";
 
 export default function App() {
 
@@ -18,7 +21,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/login" element={<LoginPage/>}/>
-          <Route path="*" element={<h1>404 Page</h1>}/>
+          <Route path="/register" element={<RegisterPage/>}/>
+          <Route path="/register" element={<RegisterPage/>}/>
+          <Route path="/forgetpassword" element={<ForgetPassword/>}/>
+          <Route path="*" element={<NotFound404/>}/>
         </Routes>
       </BrowserRouter>
     </div>
