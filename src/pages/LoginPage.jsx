@@ -7,7 +7,7 @@ import PurpleGlow2 from '../components/PurpleGlow2'
 import logo from "../assets/Logo.png";
 import { Link } from "react-router-dom";
 import RegisterPage from "./RegisterPage";
-import NavBar2 from "../components/NavBar2";
+import LoginRegisterNavbar from "../components/LoginRegisterNavbar";
 
 
 export default function LoginPage() {
@@ -41,7 +41,7 @@ export default function LoginPage() {
         <div className="min-h-screen flex items-center justify-center dark:bg-black bg-white dark:text-white text-black relative">
 
             
-            <NavBar2/>
+            <LoginRegisterNavbar/>
 
 
             <div className="w-full max-w-md px-6 flex flex-col items-center">
