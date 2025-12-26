@@ -2,9 +2,10 @@ import { useState } from "react";
 import logo from "../assets/Logo.png";
 import ThemeToggle from "./themeToggle/ThemeToggle";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function NavBar() {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const navLinks = [
     { name: "Home", sectionId: "home" },
@@ -84,7 +85,7 @@ export default function NavBar() {
 
         {/* زرار البرجر */}
         <button
-          className="md:hidden text-2xl text-white ml-2"
+          className="md:hidden text-2xl text-black dark:text-white ml-2"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <HiX /> : <HiMenuAlt3 />}
@@ -103,9 +104,14 @@ export default function NavBar() {
               {item.name}
             </button>
           ))}
-          <button className="transition-all bg-main-gr py-3 rounded-md font-bold mt-2">
+          <div className="flex flex-col items-center w-full gap-4">
+            <button onClick={()=>navigate('/login')} className="transition-all bg-main-gr py-3 rounded-md font-bold mt-2 w-full">
             Login
           </button>
+          <Link to="/register" className=" transition-all cursor-pointer hover:scale-105 md:text-[13px] lg:text-[14px] xl:text-[18px] font-semibold bg-main-gr bg-clip-text text-transparent whitespace-nowrap">
+            Sign Up
+          </Link>
+          </div>
         </div>
       )}
     </nav>
