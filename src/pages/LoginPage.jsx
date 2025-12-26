@@ -67,7 +67,7 @@ export default function LoginPage() {
                             {/* Phone */}
                             <div>
                                 <label className="text-sm">Phone Number</label>
-                                <div className="flex items-center gap-3 dark:bg-[#1A1A1A] bg-[#FFFFFF] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-purple-500">
+                                <div className="flex items-center gap-3 dark:bg-[#1A1A1A] bg-[#FFFFFF] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-brand-purple">
                                     <Phone size={20} className="text-gray-400" />
                                     <Field
                                         name="phone"
@@ -86,7 +86,7 @@ export default function LoginPage() {
                             {/* Password */}
                             <div>
                                 <label className="text-sm">Password</label>
-                                <div className="flex items-center gap-3 dark:bg-[#1A1A1A] bg-[#FFFFFF] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-purple-500">
+                                <div className="flex items-center gap-3 dark:bg-[#1A1A1A] bg-[#FFFFFF] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-brand-purple">
                                     <Lock size={20} className="text-gray-400" />
                                     <Field
                                         name="password"
@@ -114,7 +114,7 @@ export default function LoginPage() {
                                     <Field
                                         type="checkbox"
                                         name="remember"
-                                        className=" accent-purple-500"
+                                        className="checkbox-primary checkbox-sm checkbox "
                                     />
                                     Remember Me
                                 </label>
@@ -136,7 +136,7 @@ export default function LoginPage() {
                             {/* Student Code */}
                             <div>
                                 <label className="text-sm dark:text-white text-black">Student Code</label>
-                                <div className="flex items-center dark:bg-[#1A1A1A] bg-[#FFFFFF] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-purple-500">
+                                <div className="flex items-center dark:bg-[#1A1A1A] bg-[#FFFFFF] rounded-lg px-4 h-14 mt-1 focus-within:ring-2 focus-within:ring-brand-purple">
                                     <Field
                                         name="studentCode"
                                         type="text"
@@ -149,7 +149,7 @@ export default function LoginPage() {
                             {/* Button */}
                             <button
                                 type="submit"
-                                className="w-full h-14 rounded-xl bg-gradient-to-r from-purple-500 to-cyan-400 font-semibold text-lg hover:opacity-90 transition"
+                                className="w-full h-14 rounded-xl bg-main-gr! font-semibold text-lg hover:opacity-90 text-[#FFFFFF] transition"
                             >
                                 Log In
                             </button>
